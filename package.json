@@ -1,6 +1,6 @@
 {
   "name": "json-to-fixture",
-  "version": "1.0.0-pre",
+  "version": "1.0.0-pre2",
   "description": "Load a set of JSON files from a directory into a fixture object for easy use in tests.",
   "main": "dist/src/index.js",
   "scripts": {
