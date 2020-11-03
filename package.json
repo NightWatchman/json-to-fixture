@@ -43,10 +43,7 @@
     },
     "testPathIgnorePatterns": [
       "/node_modules/",
-      "/webapp/",
-      "/cdk.out/",
-      "/.cache/",
-      "/.build/"
+      "/dist/"
     ]
   },
   "eslintConfig": {
