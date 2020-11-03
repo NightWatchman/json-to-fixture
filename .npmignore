@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+typings/
+lib/
+src/
+test/
+tsconfig.json
+
