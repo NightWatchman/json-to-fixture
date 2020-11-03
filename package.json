@@ -1,0 +1,31 @@
+{
+  "name": "json-to-fixture",
+  "version": "1.0.0-pre",
+  "description": "Load a set of JSON files into a fixture object for easy use in tests.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NightWatchman/json-to-fixture.git"
+  },
+  "keywords": [
+    "json",
+    "fixture",
+    "test",
+    "load",
+    "files"
+  ],
+  "author": "Eric Rushing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NightWatchman/json-to-fixture/issues"
+  },
+  "homepage": "https://github.com/NightWatchman/json-to-fixture#readme",
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
+}
