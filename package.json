@@ -1,7 +1,7 @@
 {
   "name": "json-to-fixture",
   "version": "1.0.0-pre",
-  "description": "Load a set of JSON files into a fixture object for easy use in tests.",
+  "description": "Load a set of JSON files from a directory into a fixture object for easy use in tests.",
   "main": "dist/index.js",
   "scripts": {
     "start": "tsc -w",
