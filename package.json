@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Load a set of JSON files from a directory into a fixture object for easy use in tests.",
   "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "start": "tsc -w",
     "build": "tsc",
