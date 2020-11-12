@@ -2,8 +2,14 @@ import Path from 'path';
 import fs from 'fs';
 import {map} from '../lib/map-helper';
 
+function onlyJsonFilter(files: string[]): string[] {
+  return files.filter(f =>
+    f.endsWith('.json'));
+}
+
 export default async function makeFixture(directory: string): Promise<Record<string, any>> {
-  const fileNameList: string[] = await fs.promises.readdir(directory);
+  const fileNameList: string[] = await fs.promises.readdir(directory)
+    .then(onlyJsonFilter);
 
   const filePathMap: Map<string, string> = fileNameList.reduce((pm, fn) =>
     pm.set(fn.replace('.json', ''), Path.join(directory, fn)),

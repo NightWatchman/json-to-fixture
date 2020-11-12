@@ -1,0 +1,9 @@
+{
+  "name": "United Federation of Planets",
+  "foundedYear": 2161,
+  "technologies": [
+    "Warp drive",
+    "Transporter"
+  ],
+  "currency": "Federation Credit"
+}

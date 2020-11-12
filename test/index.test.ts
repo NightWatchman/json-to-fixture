@@ -25,6 +25,26 @@ describe('#makeFixture', () => {
     });
   });
 
+  describe('folder has subdirectories', () => {
+    it('ignores subdirectories, and fixtures the json files from the given directory', async () => {
+      const result = await makeFixture(Path.join(__dirname, 'fixtures', 'has-subdirectory'));
+      return expect(result).toEqual({
+        peopleList: expect.anything(),
+        federationInfo: expect.anything()
+      });
+    });
+  });
+
+  describe('folder has non-json files', () => {
+    it('skips non-json files and fixtures the json files only', async () => {
+      const result = await makeFixture(Path.join(__dirname, 'fixtures', 'non-json-files'));
+      return expect(result).toEqual({
+        peopleList: expect.anything(),
+        federationInfo: expect.anything()
+      });
+    });
+  });
+
   describe('folder has a valid set of fixture json files', () => {
     it('makes fixtures out of the json files', async () => {
       const result = await makeFixture(Path.join(__dirname, 'fixtures', 'data'));

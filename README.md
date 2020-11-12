@@ -31,3 +31,8 @@ makeFixture(fixtureDirectoryPath)
     // }
   });
 ```
+
+## Changelog
+
+### v1.1.0
+- Ignores subdirectories and non-json files. Any files that don't have the `.json` extension are silently skipped, as are all subdirectories.
